@@ -1,0 +1,137 @@
+.header
+{
+    height: 130px;
+    border: solid black 2px;
+    width: 100%;
+    background-color: #303030;
+}
+.logoTekst{
+    color: #ff8b67;
+    font-size: 70px;
+    font-family: 'Trebuchet MS', sans-serif;
+    padding-left: 20px;
+    
+    position: absolute;
+}
+.logo
+{
+    padding-top: 10px;
+    float: left;
+}
+.logo img 
+{
+    height: 120px;
+    width: 120px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    
+}
+.logowanie
+{
+    float: right;
+    width: 40%;
+    border: solid red 2px;
+    color: white;
+}
+
+.logowanie form
+{
+    float: right;
+}
+.logowanie button{
+    float: right;
+}
+.kategorie
+{
+    height: 50px;
+    color: white;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    padding-top: 7px;
+    font-size: 20px;
+}
+.kategorieSeriali
+{
+    margin-left: 400px;
+    width: 12%;
+    height: 100%;
+    float: left;
+    
+   
+}
+.top50
+{
+    width: 12%;
+    height: 100%;
+    float: left;
+   
+}
+.aktorzy
+{
+    width: 12%;
+    height: 100%;
+    float: left;
+   
+}
+.nowosci    
+{
+    width: 12%;
+    height: 100%;
+    float: left;
+   
+}
+.bazaSeriali
+{
+    width: 12%;
+    height: 100%;
+    float: left;
+}
+.newsy
+{
+    border: solid red 2px;
+    min-height: 950px;
+}
+.footer
+{
+    height: 45px;
+    border: solid black 2px;
+    width: 100%;
+    bottom: 0;
+}
+.kontakt
+{
+    width: 100%;
+    float: left;
+    height: 45px;
+    color: white;
+    background-color: black;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    letter-spacing: 3px;
+    
+}
+.stopa{
+    margin-left: 740px;
+    margin-top: 8px;
+    position: absolute;
+}
+.stopa2{
+    margin-left: 980px;
+    margin-top: 8px;
+    position: absolute;
+}
+
+a 
+{
+    text-decoration: none;
+    color:  white;
+}
+ a:hover
+{
+     color: #ff8b67;
+}
+.blad
+{
+    color: red;
+}
