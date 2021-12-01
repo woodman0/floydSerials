@@ -12,10 +12,8 @@
 <body>
     <section class="recentNews">
     <div class="container">
-        <h2 class="news-title">Recent News</h2>
-        <div class="row" data-animation="hierarchical-display">
-
-
+        <h2 class="news-title">Newsy ze świata seriali</h2>
+        <div class="wiersz" data-animation="hierarchical-display">
 
 <?php
 

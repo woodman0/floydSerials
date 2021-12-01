@@ -133,3 +133,8 @@ a
 {
     color: red;
 }
+.wiersz
+{
+    border: yellow solid 2px;
+    width: 90%
+}
