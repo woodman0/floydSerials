@@ -46,20 +46,20 @@ session_start();
     </div>
     <div class="main">
         <div class="kategorie">
-            <div class="kategorieSeriali">
-            <a href="#">Kategorie</a>
-            </div>
             <div class="nowosci">
-            <a href="#">Nowości</a>
+                <a href="#">Newsy</a>
+            </div>
+            <div class="kategorieSeriali">
+                <a href="#">Kategorie</a>
             </div>
             <div class="top50">
-            <a href="#">Seriale</a>
+                <a href="#">Seriale</a>
             </div>
             <div class="aktorzy">
                 <a href="#">Ranking Seriali</a>
             </div>
             <div class="bazaSeriali">
-            <a href="#">Aktorzy</a>
+                <a href="#">Aktorzy</a>
             </div>
         </div>
         <div class="newsy">
