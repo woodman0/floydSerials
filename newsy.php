@@ -32,7 +32,7 @@
         <div class="ct-blog col-sm-6 col-md-2">
             <div class="inner">
             <div class="fauxcrop">
-                <a href="#"><img src="'. $serial["zdjecie"] .'" class="img-fluid"></a>
+                <a href="#"><img src="grafika/'. $serial["zdjecie"] .'" class="img-fluid"></a>
             </div>
             <div class="ct-blog-content">
                 <h3 class="ct-blog-header">
