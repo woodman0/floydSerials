@@ -37,6 +37,7 @@
                 '. $serial["nazwa"] .'
                 </h3>
             </div>
+            <br>
             </div>
         </div>
         
