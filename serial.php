@@ -27,6 +27,7 @@ session_start();
         <div class="logowanie">
 		
 			<?php
+            
 				echo $_SESSION['user'].'<a href="wyloguj.php">Wyloguj się</a>';
                
 			?>

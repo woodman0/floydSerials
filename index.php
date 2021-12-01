@@ -16,11 +16,14 @@ session_start();
     <link rel="icon" type="image/x-icon" href="grafika/miniaturka.svg">
     <title>Floyd Serials</title>
     <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-1.7.2.min.js"
+    integrity="sha256-R7aNzoy2gFrVs+pNJ6+SokH04ppcEqJ0yFLkNGoFALQ="
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="zmd.hierarchical-display.min.css">
+    <script src="jquery.zmd.hierarchical-display.min.js"></script>
 </head>
 <body>
 
-    
-    
     <div class="header">
         <div class="logo">
             <img src="grafika/logoS.png">
@@ -61,7 +64,9 @@ session_start();
         </div>
         <div class="newsy">
             <?php
+
             include 'newsy.php';
+
             ?>
         </div>
     </div>
