@@ -1,6 +1,4 @@
-<<<<<<< HEAD
 <section class="recentNews">
-=======
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -13,7 +11,6 @@
 </head>
 <body>
     <section class="recentNews">
->>>>>>> d88e5185d967bc01684f893d2ec4955a821e62d5
     <div class="container">
         <h2 class="news-title">Recent News</h2>
         <div class="row" data-animation="hierarchical-display">
