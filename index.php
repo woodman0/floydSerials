@@ -4,7 +4,7 @@
         <div class="newsy">
             <?php
 
-            include 'newsy.php';
+            include 'seriale.php';
 
             ?>
         </div>
