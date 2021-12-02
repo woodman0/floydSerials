@@ -20,7 +20,6 @@ session_start();
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-
     <div class="header">
         <div class="logo">
             <img src="grafika/logoS.png">
@@ -28,20 +27,17 @@ session_start();
             
         </div>
 
-
         <?php
 
             if(isset($_SESSION['zalogowany']))
             {
-
                 echo '
 
                     <div class="logowanie">
-                    <a href="wyloguj.php">Wyloguj się</a>
+                        <a href="wyloguj.php">Wyloguj się</a>
                     </div>
 
                 ';
-
             }
             else
             {

@@ -32,6 +32,14 @@
     width: 40%;
     border: solid red 2px;
     color: white;
+    padding-top: 40px;
+}
+.logowanie a
+{
+    float: right;
+    width: 30%;
+    border: solid red 2px;
+    color: white;
 }
 
 .logowanie form
