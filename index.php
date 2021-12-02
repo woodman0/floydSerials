@@ -38,16 +38,19 @@ session_start();
 			echo $_SESSION['blad'];
             }
 		 ?>
-            <a href="rejestracja.php">Zarejestruj się</a>
+         <form action="rejestracja.php">
+             <input type="submit" value="Zarejestruj się">
+        </form>
+            
         </div>
     </div>
     <div class="main">
         <div class="kategorie">
             <div class="kategorieSeriali">
-            <a href="#">Kategorie</a>
+            <a href="#">Strona główna</a>
             </div>
             <div class="nowosci">
-            <a href="#">Newsy</a>
+            <a href="#">Kategorie</a>
             </div>
             <div class="top50">
             <a href="#">Seriale</a>

@@ -63,9 +63,10 @@
     <title>Flod Serials - rejestracja</title>
     <link href="style.css" rel="stylesheet">
 </head>
-<body>
+<body class="body_rejestracja">
 
-<from method="POST">
+<from method="POST" class="rej_box">
+    <h1>Zarejestuj się</h1>
     Login: <input type="text" name="login" /><br />
     <?php
         if(isset($_SESSION['blad_login']))

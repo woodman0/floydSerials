@@ -138,6 +138,36 @@ a
     border: red solid 2px;
     width: 90%
 }
+.body_rejestracja{
+    background-color: #303030;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+.rej_box{
+    color: #ff8b67;
+    width: 400px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    text-align: center;
+
+}
+.rej_box input[type= "login"],.rej_box input[type= "haslo1"],.rej_box input[type= "haslo2"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center ;
+}
+
+
+
+
+
+
+
 .inner
 {
     border: orange solid 2px;
