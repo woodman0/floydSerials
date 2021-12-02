@@ -30,10 +30,10 @@
 {
     float: right;
     width: 40%;
-    border: solid red 2px;
+    
     color: white;
-    padding-top: 40px;
-    padding-right: 50px;
+    padding-top: 25px;
+    padding-right: 20px;
 }
 .logowanie a
 {
@@ -210,7 +210,7 @@ a
     border-radius: 10px;
 }
 .przycisk{
-    padding: 10px;
+    padding: 10px;  
 }
 
 
