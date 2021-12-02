@@ -44,10 +44,10 @@ session_start();
                 echo '
 
                     <div class="logowanie">
-                        <form action="logowanie.php" method="POST">
+                        <form class="przycisk" action="logowanie.php" method="POST">
                             <input type="submit" value="Zaloguj się"/><br />
                         </form>
-                        <form action="rejestracja.php">
+                        <form class="przycisk" action="rejestracja.php">
                             <input type="submit" value="Zarejestruj się">
                         </form> 
                     </div>
