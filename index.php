@@ -66,7 +66,7 @@ session_start();
             <?php
 
             include 'newsy.php';
-
+            
             ?>
         </div>
     </div>
