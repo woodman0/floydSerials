@@ -8,10 +8,10 @@
 <body class="body_rejestracja">
 
 
-<form method="POST" class="rej_box" acction="zaloguj.php">
+<form method="POST" class="rej_box" action="zaloguj.php">
     <h1>Zaloguj się</h1>
     <input type="text" name="login" placeholder="Podaj login"/><br />
-     <input type="text" name="haslo1"  placeholder="Podaj hasło"/><br />
+     <input type="text" name="haslo"  placeholder="Podaj hasło"/><br />
     <br />
     <input type="submit" value="Zaloguj się" />
 

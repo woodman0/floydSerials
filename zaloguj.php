@@ -10,6 +10,9 @@ $haslo= $_POST['haslo'];
 
 $zapytanie = "SELECT * FROM uzytkownik WHERE login='$login' AND haslo='$haslo'";
 
+
+
+
 if($rezultat = mysqli_query($polaczenie, $zapytanie))
 {
 	$ilu_userow = $rezultat->num_rows;
