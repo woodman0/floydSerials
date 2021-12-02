@@ -28,9 +28,8 @@ session_start();
             
         </div>
         <div class="logowanie">
-            <form action="zaloguj.php" method="POST">
-                E-mail: <input type="text" name="login" /><br />
-                Haslo: <input type="text" name="haslo" /><br />
+            <form action="logowanie.php" method="POST">
+                
                 <input type="submit" value="Zaloguj się"/><br />
             </form>
             <?php

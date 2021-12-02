@@ -27,7 +27,7 @@ if($rezultat = mysqli_query($polaczenie, $zapytanie))
 		header('Location: serial.php');
 	}else{
 		$_SESSION['blad'] = "<span style='color:red'>Nieprawidłowy login lub haslo</span>";
-		header('Location: index.php');
+		header('Location: logowanie.php');
 	}
 }
 
