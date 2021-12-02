@@ -41,6 +41,7 @@
 .logowanie button{
     float: right;
 }
+
 .kategorie
 {
     height: 50px;
@@ -51,45 +52,38 @@
     padding-top: 7px;
     font-size: 20px;
 }
-.kategorieSeriali
+.glowna
 {
     margin-left: 400px;
     width: 12%;
     height: 100%;
     float: left;
 }
-.top50
+.kategorieSeriali
+{
+    width: 12%;
+    height: 100%;
+    float: left; 
+}
+.seriale
 {
     width: 12%;
     height: 100%;
     float: left;
-   
+}
+.ranking
+{
+    width: 12%;
+    height: 100%;
+    float: left;
 }
 .aktorzy
 {
     width: 12%;
     height: 100%;
-    float: left;
-   
+    float: left;  
 }
-.nowosci    
-{
-    width: 12%;
-    height: 100%;
-    float: left;
-   
-}
-.bazaSeriali
-{
-    width: 12%;
-    height: 100%;
-    float: left;
-}
-.newsy
-{
-    border: solid red 2px;
-    min-height: 950px;
-}
+
 .footer
 {
     height: 45px;
@@ -161,12 +155,6 @@ a
     margin: 20px auto;
     text-align: center ;
 }
-
-
-
-
-
-
 
 .inner
 {

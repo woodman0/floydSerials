@@ -11,7 +11,8 @@
 
     $result = mysqli_query($conn, $sql);
 
-    while($serial = mysqli_fetch_assoc($result)) {
+    while($serial = mysqli_fetch_assoc($result)) 
+    {
         
         echo '
         
