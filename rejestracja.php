@@ -65,7 +65,7 @@
 </head>
 <body class="body_rejestracja">
 
-<from method="POST" class="rej_box">
+<form method="POST" class="rej_box">
     <h1>Zarejestuj się</h1>
     <input type="text" name="login" placeholder="Podaj login"/><br />
     <?php

@@ -24,7 +24,7 @@ if($rezultat = mysqli_query($polaczenie, $zapytanie))
 		unset($_SESSION['blad']);
 		$rezultat->close();
 		
-		header('Location: serial.php');
+		header('Location: seriale.php');
 	}else{
 		$_SESSION['blad'] = "<span style='color:red'>Nieprawidłowy login lub haslo</span>";
 		header('Location: logowanie.php');
