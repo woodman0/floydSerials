@@ -1,3 +1,6 @@
+<?php
+    include 'top.php';
+?>
 <section class="recentNews">
     <div class="container">
         <h2 class="news-title">Wszystkie seriale</h2>
@@ -41,3 +44,6 @@
 
         </div>
 </section>
+<?php
+    include 'bot.php';
+?>
