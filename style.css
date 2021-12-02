@@ -157,3 +157,13 @@ a
 {
     border: green solid 2px;
 }
+
+.serialbox img{
+    height: 200px;
+    width: 200px;
+    object-fit: contain;
+}
+.serialboxoffice{
+
+    flex-direction: column
+}
