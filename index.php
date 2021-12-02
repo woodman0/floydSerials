@@ -4,7 +4,7 @@
         <div class="newsy">
             <?php
 
-            include 'seriale.php';
+            include 'glowna.php';
 
             ?>
         </div>
