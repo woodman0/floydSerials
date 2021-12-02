@@ -194,8 +194,24 @@ a
     background-color: #ff8b67;
     color: black;
 }
-
-
+.logowanie input{
+    color:#ff8b67;
+    background-color: black;
+    border: 0;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    padding: 10px;
+}
+.logowanie input:hover{
+    background-color:#ff8b67;
+    color: black;
+    border: 0;
+    border-radius: 10px;
+}
+.przycisk{
+    padding: 10px;
+}
 
 
 
