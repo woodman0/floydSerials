@@ -1,4 +1,3 @@
-
     <section class="recentNews">
     <div class="container">
         <h2 class="news-title">Newsy ze świata seriali</h2>
@@ -37,20 +36,7 @@
 
     mysqli_close($conn);
 
-
 ?>
 
-
-
-        
-
-
-
-
-
         </div>
-        <div class="btn-news btn-contests">
-        <a href="#">VIEW ALL NEWS</a>
-        </div>
-    </div>
 </section>
