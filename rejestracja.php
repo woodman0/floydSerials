@@ -67,7 +67,7 @@
 
 <from method="POST" class="rej_box">
     <h1>Zarejestuj się</h1>
-    Login: <input type="text" name="login" /><br />
+    <input type="text" name="login" placeholder="Podaj login"/><br />
     <?php
         if(isset($_SESSION['blad_login']))
         {
@@ -77,7 +77,7 @@
     ?>
 
 
-    Hasło: <input type="text" name="haslo1" /><br />
+     <input type="text" name="haslo1"  placeholder="Podaj hasło"/><br />
     <?php
     
         if(isset($_SESSION['blad_haslo']))
@@ -86,7 +86,7 @@
             unset($_SESSION['blad_haslo']);
         }
     ?>
-    Powtórz hasło: <input type="text" name="haslo2" /><br />
+    <input type="text" name="haslo2" placeholder="Powtórz haslo"/><br />
     <br />
     <input type="submit" value="Zarejestruj się" />
 
