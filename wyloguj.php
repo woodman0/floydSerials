@@ -1,7 +1,9 @@
 <?php
 session_start();
 
-session_unset();
+unset($_SESSION['zalogowany']);
+unset($_SESSION['id']);
+unset($_SESSION['user']);
+
 header('Location: index.php');
 ?>
-

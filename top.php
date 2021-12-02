@@ -27,15 +27,40 @@ session_start();
             <a class="logoTekst">FLOYD SERIALS</a>
             
         </div>
-        <div class="logowanie">
-            <form action="logowanie.php" method="POST">
-                
-                <input type="submit" value="Zaloguj się"/><br />
-            </form>
-            <form action="rejestracja.php">
-                <input type="submit" value="Zarejestruj się">
-            </form> 
-        </div>
+
+
+        <?php
+
+            if(isset($_SESSION['zalogowany']))
+            {
+
+                echo '
+
+                    <div class="logowanie">
+                    <a href="wyloguj.php">Wyloguj się</a>
+                    </div>
+
+                ';
+
+            }
+            else
+            {
+                echo '
+
+                    <div class="logowanie">
+                        <form action="logowanie.php" method="POST">
+                            <input type="submit" value="Zaloguj się"/><br />
+                        </form>
+                        <form action="rejestracja.php">
+                            <input type="submit" value="Zarejestruj się">
+                        </form> 
+                    </div>
+
+                ';
+            }
+
+        ?>
+
     </div>
     <div class="main">
         <div class="kategorie">
