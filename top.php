@@ -32,11 +32,6 @@ session_start();
                 
                 <input type="submit" value="Zaloguj się"/><br />
             </form>
-            <?php
-                if(isset($_SESSION['blad'])){
-                echo $_SESSION['blad'];
-                }
-            ?>
             <form action="rejestracja.php">
                 <input type="submit" value="Zarejestruj się">
             </form> 
