@@ -86,7 +86,6 @@ CREATE TABLE `seriale` (
 
 INSERT INTO `seriale` (`idSeriale`, `nazwa`, `sezony`, `data`, `zdjecie`, `srednia_ocen`, `gatunek`, `Uzytkownik_idUzytkownik`) VALUES
 (1, 'Gra o tron', 8, '2019-05-19 09:11:41', 'graotron.jpg', 8.9, 'Fantasy', 0),
-(1, 'Gra o tron', 8, '2019-05-19 09:11:41', 'graotron.jpg', 8.9, 'Fantasy', 1),
 (2, 'Breaking Bad', 5, '2013-09-29 09:17:22', 'BreakingBad.jpg', 8.6, 'Dramat', 1),
 (3, 'Detektyw', 3, '2014-03-09 09:20:34', 'Detektyw.jpg', 9, 'Dramat', 1),
 (4, 'Czarne lustro', 5, '2021-12-01 09:21:38', 'Czarnelustro.jpg', 8, 'Dramat', 1),
