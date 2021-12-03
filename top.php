@@ -18,6 +18,7 @@ session_start();
     <link rel="stylesheet" href="zmd.hierarchical-display.min.css">
     <script src="jquery.zmd.hierarchical-display.min.js"></script>
     <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="header">
@@ -34,7 +35,7 @@ session_start();
                 echo '
 
                     <div class="logowanie">
-                        <a href="wyloguj.php">Wyloguj się</a>
+                        <a href="wyloguj.php">Wyloguj</a>
                     </div>
 
                 ';

@@ -51,6 +51,11 @@
     float: right;
 }
 
+body
+{
+    background-color: #303030;
+    color: white;
+}
 .kategorie
 {
     height: 50px;
@@ -239,3 +244,7 @@ a
 
     flex-direction: column
 }
+
+.checked {
+    color: orange;
+  }
