@@ -233,6 +233,7 @@ a
 .ct-blog-header
 {
     border: green solid 2px;
+    float: left;
 }
 
 .serialbox img{
@@ -240,8 +241,12 @@ a
     width: 200px;
     object-fit: contain;
 }
-.serialboxoffice{
-
+.serialboxoffice
+{
     flex-direction: column
+}
+.opisSerialboxoffice
+{
+    float: right;
 }
 

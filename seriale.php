@@ -20,11 +20,11 @@
         echo '
         
         <div class="serialbox col-sm-12 d-flex">
-            <img src="grafika/'. $serial["zdjecie"] .'" class="img-fluid">
+            <img src="grafika/'.$serial["zdjecie"].'" class="img-fluid">
 
-            <div class="opis serialboxoffice">
+            <div class="opisSerialboxoffice">
                 <h3 class="ct-blog-header">
-                '. $serial["nazwa"] .'
+                '.$serial["nazwa"].'
                 </h3>
             </div>
 
