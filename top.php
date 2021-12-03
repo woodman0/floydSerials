@@ -72,7 +72,4 @@ session_start();
             <div class="ranking">
                 <a href="ranking.php">Ranking Seriali</a>
             </div>
-            <div class="aktorzy">
-                <a href="aktorzy.php">Aktorzy</a>
-            </div>
         </div>
