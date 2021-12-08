@@ -4,6 +4,7 @@
 <section class="recentNews">
     <div class="container">
         <h2 class="news-title">Wszystkie seriale</h2>
+        <br>
         <div class="wiersz" data-animation="hierarchical-display">
 
 <?php
@@ -34,7 +35,7 @@
             </div>
 
         </div>
-        
+        <br>
         ';
 
     }

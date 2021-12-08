@@ -4,6 +4,7 @@
     <div class="carousel-item active" data-bs-interval="3000">
       <img src="grafika/swinkapeppa.jpg" class="d-block w-100">
     </div>
+
         <?php
 
         $conn = mysqli_connect("localhost", "root", "", "bazaseriale");
@@ -28,6 +29,7 @@
         mysqli_close($conn);
 
         ?>
+        
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>

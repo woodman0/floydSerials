@@ -9,6 +9,7 @@
             <h2>
                 TOP 5 w rankingu seriali 2021 roku!
             </h2>
+            <br>
 
         <?php
         $i = 1;
