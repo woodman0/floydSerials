@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Czas generowania: 01 Gru 2021, 09:34
+-- Czas generowania: 08 Gru 2021, 10:25
 -- Wersja serwera: 10.4.21-MariaDB
 -- Wersja PHP: 7.4.24
 
@@ -145,7 +145,9 @@ CREATE TABLE `uzytkownik` (
 --
 
 INSERT INTO `uzytkownik` (`idUzytkownik`, `login`, `haslo`, `plec`) VALUES
-(1, 'adam', 'dec', 1);
+(1, 'kamil', 'debil', NULL),
+(2, 'dawid', 'szczur', NULL),
+(3, 'olek', 'pajac', NULL);
 
 --
 -- Indeksy dla zrzutów tabel
@@ -201,6 +203,16 @@ ALTER TABLE `uzytkownik`
   ADD PRIMARY KEY (`idUzytkownik`);
 
 --
+-- AUTO_INCREMENT dla zrzuconych tabel
+--
+
+--
+-- AUTO_INCREMENT dla tabeli `uzytkownik`
+--
+ALTER TABLE `uzytkownik`
+  MODIFY `idUzytkownik` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
 -- Ograniczenia dla zrzutów tabel
 --
 
@@ -214,8 +226,7 @@ ALTER TABLE `odcinki`
 -- Ograniczenia dla tabeli `opinie`
 --
 ALTER TABLE `opinie`
-  ADD CONSTRAINT `fk_Opinie_Seriale1` FOREIGN KEY (`Seriale_idSeriale`,`Seriale_Uzytkownik_idUzytkownik`) REFERENCES `seriale` (`idSeriale`, `Uzytkownik_idUzytkownik`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_Opinie_Uzytkownik1` FOREIGN KEY (`Uzytkownik_idUzytkownik`) REFERENCES `uzytkownik` (`idUzytkownik`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+  ADD CONSTRAINT `fk_Opinie_Seriale1` FOREIGN KEY (`Seriale_idSeriale`,`Seriale_Uzytkownik_idUzytkownik`) REFERENCES `seriale` (`idSeriale`, `Uzytkownik_idUzytkownik`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
 -- Ograniczenia dla tabeli `seriale_has_aktorzy`
