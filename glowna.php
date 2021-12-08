@@ -1,6 +1,6 @@
 <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" style="margin: auto; width: 29%;">
   <div class="carousel-inner">
-    <div class="carousel-item active" data-bs-interval="10000">
+    <div class="carousel-item active" data-bs-interval="3000">
       <img src="grafika/swinkapeppa.jpg" class="d-block w-100">
     </div>
         <?php
@@ -16,7 +16,7 @@
             
             echo '
             
-            <div class="carousel-item" data-bs-interval="1000">
+            <div class="carousel-item" data-bs-interval="3000">
                 <img src="grafika/'.$serial["zdjecie"].'" class="d-block w-100">
             </div>
 
