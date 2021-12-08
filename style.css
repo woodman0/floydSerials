@@ -38,7 +38,6 @@
 {
     float: right;
     width: 30%;
-    border: solid red 2px;
     color: white;
 }
 
@@ -131,13 +130,8 @@ a
 {
      color: #ff8b67;
 }
-.blad
-{
-    color: red;
-}
 .wiersz
 {
-    border: red solid 2px;
     width: 90%
 }
 .body_rejestracja{
@@ -212,22 +206,12 @@ a
     padding: 10px;  
 }
 
-.inner
-{
-    border: orange solid 2px;
-}
-.fauxcrop
-{
-    border: blue solid 2px;
-}
 .ct-blog-content
 {
-    border: gray solid 2px;
     float: left;
 }
 .ct-blog-header
 {
-    border: green solid 2px;
     float: left;
 }
 
@@ -249,7 +233,6 @@ a
 {
     margin: auto;
     width: 50%;
-    border: 3px solid green;
     padding: 10px;
 }
 
