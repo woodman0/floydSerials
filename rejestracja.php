@@ -49,6 +49,7 @@
             if ($polaczenie->query("INSERT INTO uzytkownik (login, haslo) VALUES ('$login', '$haslo1');"))
             {
                 header('Location: index.php');
+                $_SESSION['zalogowany'] = true;
             }
             else
             {
