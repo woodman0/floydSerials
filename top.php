@@ -35,7 +35,11 @@ session_start();
                 echo '
 
                     <div class="logowanie">
-                        <a href="wyloguj.php">Wyloguj</a>
+                    <form class="przycisk" action="wyloguj.php">
+                            <input type="submit" value="Wyloguj się"/><br />
+                        </form>
+
+                        
                     </div>
 
                 ';
