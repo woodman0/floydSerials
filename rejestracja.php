@@ -1,10 +1,10 @@
 <?php
     session_start();
 
+    var_dump($_POST);
     if(isset($_POST['haslo1']))
     {
         $jest_git=true;
-
         $login= $_POST['login'];
 
         if((strlen($login)<3) || (strlen($login)>10))
@@ -36,23 +36,27 @@
         $rezultat = $polaczenie->query("SELECT idUzytkownik FROM uzytkownik WHERE login='$login'");
 
         $ile_uzytkownikow = $rezultat->num_rows;
-				if($ile_uzytkownikow>0)
-				{
-					$jest_git=false;
-					$_SESSION['blad_login']="Istnieje już użytkownik o takim loginie.";
-				}
+        if($ile_uzytkownikow>0)
+        {
+            $jest_git=false;
+            $_SESSION['blad_login']="Istnieje już użytkownik o takim loginie.";
+        }
 
 
 
         if($jest_git==true)
         {
-            if ($polaczenie->query("INSERT INTO uzytkownicy VALUES (NULL, '$login', '$haslo1')"))
-					{
-						header('Location: index.php');
-					}
-            
+            if ($polaczenie->query("INSERT INTO uzytkownik (login, haslo) VALUES ('$login', '$haslo1');"))
+            {
+                header('Location: index.php');
+            }
+            else
+            {
+                echo "nie dziala";
+            }
         } 
         $polaczenie->close();
+
     }
     
 ?>
