@@ -2,51 +2,68 @@
     include 'top.php';
 ?>
 
-<?php
 
-    $conn = mysqli_connect("localhost", "root", "", "bazaseriale");
-
-    $sql = "SELECT * FROM seriale";
-
-    $result1 = mysqli_query($conn, $sql);
-    if(isset($_POST['']))
-?>
 <form method="POST">
-<div class="select-box">
-  <div class="options-container">
-    <div class="option">
-      <input type="radio" class="radio" id="dramat" name="category"/>
-      <label for="dramat">Dramat</label>
-    </div>
 
-    <div class="option">
-      <input type="radio" class="radio" id="kryminal" name="category" />
-      <label for="kryminal">Kryminał</label>
-    </div>
 
-    <div class="option">
-      <input type="radio" class="radio" id="scifi" name="category" />
-      <label for="scifi">Sci-Fi</label>
-    </div>
-
-    <div class="option">
-      <input type="radio" class="radio" id="athriller" name="category" />
-      <label for="thriller">Thriller</label>
-    </div>
-
-    <div class="option">
-      <input type="radio" class="radio" id="fantasy" name="category" />
-      <label for="fantasy">Fantasy</label>
-    </div>
+    <select name="kategorie" class="selected">
+    <option value="">Wybierz kategorie</option>
+    <option value="Fantasy" >Fantasy</option>
+    <option value="Sci-Fi">Sci-Fi</option>
+    <option value="Dramat">Dramat</option>
+    <option value="Thriller">Thriller</option>
+    <option value="Komedia">Komedia</option>
+  </select>
+<input type="submit" name="submit" value="Szukaj" class="input-k">
+</div>
 </form>
-    
-  </div>
 
-  <div class="selected">
-    Wybierz kategorię
-  </div>
-</div>
-</div>
+
+
+
+
+<?php
+    if(isset($_POST['submit'])){
+     
+    $conn = mysqli_connect("localhost", "root", "", "bazaseriale");
+    
+    $name = $_POST['kategorie'];
+    
+
+    $sql = "SELECT * FROM seriale WHERE gatunek = '$name'";
+    
+
+    $result = mysqli_query($conn, $sql);
+    
+
+    while($serial = mysqli_fetch_assoc($result)) 
+    {
+        
+        echo '
+        
+        <div class="serialbox col-sm-12 d-flex">
+            <img src="grafika/'.$serial["zdjecie"].'" class="img-fluid">
+
+            <div class="opisSerialboxoffice">
+                <h3 class="ct-blog-header">
+                '.$serial["nazwa"].'
+                </h3>
+            </div>
+            </div>
+        <br>
+        ';
+
+    }
+
+    mysqli_close($conn);
+  }
+
+?>
+
+
+
+
+
 
 <script src="main.js"></script>
 
