@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.0.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Czas generowania: 08 Gru 2021, 10:25
--- Wersja serwera: 10.4.21-MariaDB
--- Wersja PHP: 7.4.24
+-- Czas generowania: 09 Gru 2021, 12:39
+-- Wersja serwera: 10.4.17-MariaDB
+-- Wersja PHP: 8.0.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -66,6 +66,18 @@ CREATE TABLE `opinie` (
 -- --------------------------------------------------------
 
 --
+-- Struktura tabeli dla tabeli `rating`
+--
+
+CREATE TABLE `rating` (
+  `rating_id` int(11) NOT NULL,
+  `business_id` int(11) NOT NULL,
+  `rating` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
 -- Struktura tabeli dla tabeli `seriale`
 --
 
@@ -94,7 +106,17 @@ INSERT INTO `seriale` (`idSeriale`, `nazwa`, `sezony`, `data`, `zdjecie`, `sredn
 (7, 'Dark', 3, '2020-08-11 09:26:15', 'Dark.jpg', 7.7, 'Sci-Fi', 1),
 (8, 'Wiedźmin', 2, '2021-12-17 09:27:43', 'Wiedźmin.jpg', 6.9, 'Fantasy', 1),
 (9, 'Mindhunter', 2, '2019-08-16 09:29:06', 'Mindhunter.jpg', 7.9, 'Kryminał', 1),
-(10, 'Ślepnąc od świateł', 1, '2018-10-24 09:30:12', 'Ślepnącodświateł.jpg', 7.2, 'Thriller', 1);
+(10, 'Ślepnąc od świateł', 1, '2018-10-24 09:30:12', 'Ślepnącodświateł.jpg', 7.2, 'Thriller', 1),
+(11, 'Sherlock', 4, '2020-05-07 12:22:01', 'Sherlock.jpg', 7.4, 'Dramat', 1),
+(12, 'Stranger Things', 4, '2021-09-07 12:24:34', 'Stranger Things.jpg', 5.6, 'Sci-Fi', 1),
+(13, 'Mr. Robot', 4, '2021-12-05 12:26:13', 'MrRobot.jpg', 7.1, 'Dramat', 1),
+(14, 'Czarnobyl', 1, '2021-12-02 12:29:08', 'Czarnobyl.jpg', 8.8, 'Dramat', 1),
+(15, 'Dom z papieru', 5, '2021-12-04 12:30:03', 'Domzpapieru.jpg', 6.1, 'Thriller', 1),
+(16, 'The Walking Dead', 11, '2021-12-01 12:31:13', 'TheWalkingDead.jpg', 6.8, 'Dramat', 1),
+(17, 'Biuro', 9, '2021-12-03 12:32:43', 'Biuro.jpg', 8, 'Komedia', 1),
+(18, 'Rick i Morty', 5, '2021-12-06 12:33:57', 'RickiMorty.jpg', 7.5, 'Komedia', 1),
+(19, 'Gambit królowej', 1, '2021-12-07 12:35:24', 'Gambitkrólowej.jpg', 8, 'Dramat', 1),
+(20, 'Narcos', 3, '2021-12-01 12:36:48', 'Narcos.jpg', 8.4, 'Dramat', 1);
 
 -- --------------------------------------------------------
 
@@ -175,6 +197,12 @@ ALTER TABLE `opinie`
   ADD KEY `fk_Opinie_Seriale1_idx` (`Seriale_idSeriale`,`Seriale_Uzytkownik_idUzytkownik`);
 
 --
+-- Indeksy dla tabeli `rating`
+--
+ALTER TABLE `rating`
+  ADD PRIMARY KEY (`rating_id`);
+
+--
 -- Indeksy dla tabeli `seriale`
 --
 ALTER TABLE `seriale`
@@ -205,6 +233,12 @@ ALTER TABLE `uzytkownik`
 --
 -- AUTO_INCREMENT dla zrzuconych tabel
 --
+
+--
+-- AUTO_INCREMENT dla tabeli `rating`
+--
+ALTER TABLE `rating`
+  MODIFY `rating_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT dla tabeli `uzytkownik`
